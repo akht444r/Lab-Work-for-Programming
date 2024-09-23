@@ -16,7 +16,7 @@ int main(){
         cout << i << " + ";         //Show numbers and '+' symbol
     }
     cout << endl;
-cout << "Result: " << sum;          //Show sum result
+cout << "Result: " << sum << endl;; //Show sum result
 
  return 0;
 }
