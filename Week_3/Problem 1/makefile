@@ -1,8 +1,7 @@
 CXX = g++
 CXXFLAGS = -Wall -std=c++11
-TARGET = discriminant
-SRCS = discriminant.cpp
-OBJS = $(SRCS:.cpp=.o)
+TARGET = Discriminant
+SRCS = Discriminant.cpp
 
 all: $(TARGET)
 
