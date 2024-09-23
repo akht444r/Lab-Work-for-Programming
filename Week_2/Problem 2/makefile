@@ -1,22 +1,23 @@
+# Variables
 CXX = g++
-CXXFLAGS = -Wall -std=c++11
-TARGET = quadratic_equation
-SRCS = quadratic_equation.cpp
-OBJS = $(SRCS:.cpp=.o)
+CXXFLAGS = -Wall
+TARGET = quadratic equation
+SRC = quadratic equation.cpp
 
+# Default target: compile the program
 all: $(TARGET)
 
-$(TARGET): $(OBJS)
-	$(CXX) $(CXXFLAGS) -o $(TARGET) $(OBJS)
+# Compile the quadratic equation.cpp
+$(TARGET): $(SRC)
+	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
-%.o: %.cpp
-	$(CXX) $(CXXFLAGS) -c $<
-
+# Run the program in test mode (using test.txt)
 test: $(TARGET)
-	./$(TARGET) $(TESTCASE)
+	./$(TARGET) test
 
+# Clean up the compiled files
 clean:
-	rm -f $(OBJS) $(TARGET)
+	rm -f $(TARGET)
 
-run: $(TARGET)
-	./$(TARGET)
+# Phony targets to avoid conflicts
+.PHONY: all clean test
