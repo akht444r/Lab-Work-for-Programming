@@ -26,6 +26,9 @@ $(TARGET): $(OBJS)
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $<
 
+test: $(TARGET)
+	./$(TARGET) $(TESTCASE)
+
 # Clean up the object files and the executable
 clean:
 	rm -f $(OBJS) $(TARGET)
