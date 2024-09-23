@@ -12,6 +12,9 @@ $(TARGET): $(OBJS)
 %.o: %.cpp
 	$(CXX) $(CXXFLAGS) -c $<
 
+test: $(TARGET)
+	./$(TARGET) $(TESTCASE)
+
 clean:
 	rm -f $(OBJS) $(TARGET)
 
