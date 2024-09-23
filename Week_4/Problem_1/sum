@@ -1,0 +1,17 @@
+#include <iostream>
+#include <cmath>
+
+using namespace std;
+
+int main(){
+    int num, sum = 0;
+    int i;
+    cout << "Input: " << endl;
+    cin >> num;
+    for (i=1; i<=num; i++){
+        sum+=i;
+    }
+    cout << sum;
+
+ return 0;
+}
