@@ -1,13 +1,13 @@
 # Variables
 CXX = g++
 CXXFLAGS = -Wall
-TARGET = quadratic equation
-SRC = quadratic equation.cpp
+TARGET = quadratic_equation
+SRC = quadratic_equation.cpp
 
 # Default target: compile the program
 all: $(TARGET)
 
-# Compile the quadratic equation.cpp
+# Compile the quadratic_equation.cpp
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
