@@ -1,13 +1,13 @@
 # Variables
 CXX = g++
 CXXFLAGS = -Wall
-TARGET = largest number
-SRC = largest number.cpp
+TARGET = largest_number
+SRC = largest_number.cpp
 
 # Default target: compile the program
 all: $(TARGET)
 
-# Compile the largest number.cpp
+# Compile the largest_number.cpp
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
