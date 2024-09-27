@@ -1,13 +1,13 @@
 # Variables
 CXX = g++
 CXXFLAGS = -Wall
-TARGET = fizzbuzz
-SRC = fizzbuzz.cpp
+TARGET = fizzBuzz
+SRC = fizzBuzz.cpp
 
 # Default target: compile the program
 all: $(TARGET)
 
-# Compile the fizzbuzz.cpp
+# Compile the fizzBuzz.cpp
 $(TARGET): $(SRC)
 	$(CXX) $(CXXFLAGS) -o $(TARGET) $(SRC)
 
