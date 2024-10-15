@@ -22,7 +22,7 @@ int main(){
      
     cout << "-----Student's average-----" << endl;
     cout << "Student ID: " << theStudent[1].StudId << endl;
-    cout << "Average: " << 0.5*(theStudent[1].uts+theStudent[1].uas);
+    cout << "Average: " << 0.5*(theStudent[1].uts+theStudent[1].uas) << endl;
     }
     
     else {
